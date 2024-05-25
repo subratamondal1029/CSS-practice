@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan", sans-serif;
+}
+
+body {
+  background-color: #effafa;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #5ba4a4;
+  height: 156px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+header svg {
+  width: 100%;
+}
+
+#headerFilter {
+  background-color: white;
+  color: #5ba4a4;
+  position: absolute;
+  top: 78%;
+  padding: 18px 40px;
+  width: 75%;
+  font-weight: 700;
+  border-radius: 6px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 1px 11px 30px -3px rgba(12, 28, 29, 0.5);
+  display: none;
+}
+
+#headerFilter .filter {
+  background-color: #eef6f6;
+  padding-right: 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter .filterText {
+  padding: 10px;
+  padding-right: 0;
+}
+
+.filter .closeFilter {
+  background-color: hsl(180, 29%, 50%);
+  padding: 10px;
+  fill: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: all 0.4s linear;
+  text-align: center;
+  line-height: 1px;
+}
+
+.filter .closeFilter:hover {
+  background-color: hsl(180, 14%, 20%);
+}
+
+#headerFilter #filterClear {
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+#headerFilter #filterClear:hover {
+  text-decoration: underline;
+}
+
+/* main */
+main {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jobLists {
+ width: 90%;
+max-width: 1000px;
+  border: 1px solid;
+  padding: 10px 20px;
+}
