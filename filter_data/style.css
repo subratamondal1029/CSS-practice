@@ -85,16 +85,141 @@ header svg {
 
 /* main */
 main {
-  margin-top: 70px;
+  margin-top: 75px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  gap: 25px;
 }
 
 .jobLists {
- width: 90%;
-max-width: 1000px;
-  border: 1px solid;
+  width: 90%;
+  max-width: 1000px;
+  height: 140px;
+
   padding: 10px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px -3px 24px -8px rgba(15, 101, 106, 0.5);
+}
+
+.jobLists.feature {
+  border-left: 5px solid #7b8e8e;
+}
+
+.jobDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.jobDetails .companyLogo {
+  border-radius: 10pc;
+}
+
+.jobDetails .jobinfo {
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 17px;
+  flex-direction: column;
+  position: relative;
+}
+
+.jobinfo .companyName {
+  font-weight: 700;
+  font-size: 19px;
+  color: hsl(180, 29%, 50%);
+}
+
+.jobinfo .jobTitle {
+  font-weight: 800;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all .2s linear;
+}
+.jobinfo .jobTitle:hover {
+color: #5ba4a4;
+}
+
+.jobinfo .jobtiming {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  color: gray;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+}
+
+.jobinfo .jobtiming div::before {
+  content: "";
+  border: 2px solid;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-inline: 15px;
+}
+
+.jobinfo .jobtiming div:first-child::before {
+  display: none;
+}
+
+.jobinfo .features {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: -4px;
+  left: 106px;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.features .featureNew {
+  background-color: hsl(180, 29%, 50%);
+  color: #eef6f6;
+  padding: 9px 7px;
+  padding-bottom: 6px;
+  border-radius: 22px;
+  line-height: 8px;
+}
+
+.features .featureFeatured {
+  padding: 7px 7px;
+  padding-bottom: 5px;
+  background-color: #273535;
+  color: #eef6f6;
+  border-radius: 19px;
+}
+
+.jobLists .tags{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+width: 41%;
+font-weight: bold;
+color: white;
+gap: 12px;
+}
+
+.tags .tag{
+  padding: 9px 10px;
+border-radius: 5px;
+cursor: pointer;
+background-color: #2f93930d;
+color: #5ba4a4;
+transition: all .3s linear;
+}
+
+.tags .tag:hover{
+  background-color: #166c6ca6;
+  color: #eef6f6;
 }
