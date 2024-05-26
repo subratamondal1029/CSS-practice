@@ -11,6 +11,8 @@
 body {
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
   justify-content: center;
   align-items: center;
   font-family: bodyFont;
@@ -183,3 +185,6 @@ height: 174px;
         font-size: 58px;
     }
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

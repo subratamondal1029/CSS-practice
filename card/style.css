@@ -8,6 +8,8 @@
 body{
     background-color: #D5E1EF;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -41,3 +43,6 @@ body{
     font-size: 14px;
     color: #7b879d;
 }
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
