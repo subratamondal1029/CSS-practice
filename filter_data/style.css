@@ -20,7 +20,7 @@ header {
   position: relative;
 }
 
-header svg {
+header img {
   width: 100%;
 }
 
@@ -91,14 +91,15 @@ main {
   justify-content: space-around;
   align-items: center;
   gap: 25px;
+  padding-bottom: 120px;
 }
 
 .jobLists {
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   height: 140px;
 
-  padding: 10px 20px;
+  padding: 10px 25px;
   border-radius: 10px;
   display: flex;
   justify-content: space-between;
@@ -204,10 +205,9 @@ color: #5ba4a4;
   display: flex;
 justify-content: space-between;
 align-items: center;
-width: 41%;
 font-weight: bold;
 color: white;
-gap: 12px;
+gap: 15px;
 }
 
 .tags .tag{
@@ -217,7 +217,7 @@ cursor: pointer;
 background-color: #2f93930d;
 color: #5ba4a4;
 transition: all .3s linear;
-font-size: .8em;
+font-size: 1em;
 }
 
 .tags .tag:hover{
