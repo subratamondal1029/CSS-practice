@@ -18,7 +18,7 @@ function printData(data){
         // creating company Logo div
         const companyLogo = document.createElement('div')
         companyLogo.className = 'companyLogo'
-        companyLogo.innerHTML = `<img src="${job.logo}">`
+        companyLogo.innerHTML = `<img src="${job.logo}" alt="company logo">`
         jobDetails.appendChild(companyLogo)
 
         // creating jobinfo div
