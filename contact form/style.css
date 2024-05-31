@@ -22,7 +22,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding-block: 100px;
+  padding-block: 120px;
   font-family: "mainFont", sans-serif, serif;
 }
 
@@ -35,7 +35,7 @@ form {
   background-color: #fff;
   width: 93%;
   max-width: 740px;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 40px;
 }
 
@@ -75,11 +75,11 @@ form {
   border: var(--defaultBorder);
   outline: none;
   cursor: pointer;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
-.inputField input:hover{
- border-color: black;
+.inputField input:hover {
+  border-color: black;
 }
 
 .inputField .error {
@@ -113,7 +113,6 @@ form {
   position: absolute;
 }
 
-
 .queries label {
   width: 100%;
   border: var(--defaultBorder);
@@ -122,14 +121,14 @@ form {
   padding-right: 0;
   border-radius: 10px;
   cursor: pointer;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
-.queries label:hover{
+.queries label:hover {
   border-color: black;
 }
 
- .radioBtn {
+.radioBtn {
   width: 20px;
   height: 20px;
   border: var(--defaultBorder);
@@ -140,10 +139,10 @@ form {
   cursor: pointer;
 }
 
-.queries input:checked + .radioBtn{
+.queries input:checked + .radioBtn {
   background: url(assets/images/icon-radio-selected.svg) no-repeat center;
 }
-.queries input:checked ~ label{
+.queries input:checked ~ label {
   background-color: hsl(148, 38%, 91%);
 }
 
@@ -158,7 +157,7 @@ form {
   resize: none;
 }
 
-.inputField #message:hover{
+.inputField #message:hover {
   border-color: black;
 }
 
@@ -166,18 +165,23 @@ form {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 19px;
+  gap: 0 19px;
   position: relative;
+  flex-wrap: wrap;
+}
+
+.inputField#checkBox .error {
+  width: 100%;
 }
 
 .inputField input[type="checkbox"] {
-position: absolute;
-opacity: 0;
-width: 3%;
-height: 54%;
+  position: absolute;
+  opacity: 0;
+  width: 3%;
+  height: 54%;
 }
 
-#checkField{
+#checkField {
   width: 18px;
   height: 18px;
   border: var(--defaultBorder);
@@ -185,16 +189,16 @@ height: 54%;
   cursor: pointer;
 }
 
-#chechField:hover{
+#chechField:hover {
   border-color: black;
 }
 
-.inputField input[type="checkbox"]:checked + #checkField{
+.inputField input[type="checkbox"]:checked + #checkField {
   background: url(assets/images/icon-checkbox-check.svg) no-repeat center;
   border: none;
 }
 
-#submitBtn{
+#submitBtn {
   width: 100%;
   border: none;
   background-color: hsl(169, 82%, 27%);
@@ -205,37 +209,76 @@ height: 54%;
   cursor: pointer;
   border-radius: 10px;
   font-size: 18px;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
-#submitBtn:hover{
+#submitBtn:hover {
   background-color: hsl(187, 24%, 22%);
 }
 
-
-.inputField.problem .error{
+.inputField.problem .error {
   display: block;
 }
 
-.inputField.Nproblem .error{
-  display: none;
+.inputField.problem input,
+.inputField.problem #message {
+  border-color: rgb(215, 60, 60);
 }
 
-@media screen and (max-width:550px) {
-  body{
+.inputField.problem .queries label {
+  border-color: rgb(215, 60, 60);
+  background-color: rgba(215, 60, 60, 0.37);
+}
+
+#successAlert {
+  background-color: hsl(187, 24%, 22%);
+  color: #fff;
+  position: fixed;
+  /* top: 16px; */
+  top: -30%;
+  border-radius: 10px;
+  padding: 10px 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  transform: scale(0);
+  transition: all .4s linear;
+}
+
+#successAlert.success{
+  top: 16px;
+  transform: scale(1);
+}
+
+#successHeading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#text {
+  color: rgba(255, 255, 255, 0.699);
+}
+
+@media screen and (max-width: 550px) {
+  body {
     padding-block: 30px;
   }
 
-  .fields.dualField{
+  .fields.dualField {
     flex-direction: column;
   }
-  #query{
+  #query {
     flex-direction: column;
   }
 }
 
-@media screen and (max-width:400px) {
-  .inputField #message{
+@media screen and (max-width: 400px) {
+  .inputField #message {
     height: 240px;
   }
 }
