@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   padding-block: 120px;
   font-family: "mainFont", sans-serif, serif;
@@ -37,6 +38,7 @@ form {
   max-width: 740px;
   border-radius: 20px;
   padding: 40px;
+  margin-bottom: 20px;
 }
 
 #heading {
@@ -263,6 +265,10 @@ form {
 #text {
   color: rgba(255, 255, 255, 0.699);
 }
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
 
 @media screen and (max-width: 550px) {
   body {
