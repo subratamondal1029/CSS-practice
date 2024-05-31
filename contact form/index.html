@@ -34,6 +34,47 @@
             </div>
         </div>
 
+        <div class="fields">
+            <div class="inputField" id="queryField">
+                <label>Query Type <span class="red">*</span></label>
+                <div id="query">
+                    <div class="queries">
+                        <input type="radio" name="query" id="query1">
+                        <span class="radioBtn"></span>
+                        <label for="query1">General Enquiry</label>
+                    </div>
+                    <div class="queries">
+                        <input type="radio" name="query" id="query2">
+                        <span class="radioBtn"></span>
+                        <label for="query2">Support Request</label>
+                    </div>
+                </div>
+                <div class="error">Error Here</div>
+            </div>
+        </div>
+
+        <div class="fields">
+            <div class="inputField">
+                <label for="message">Message <span class="red">*</span></label>
+                <textarea name="message" id="message"></textarea>
+                <div class="error">Error Here</div>
+            </div>
+        </div>
+
+        <div class="fields">
+            <div class="inputField" id="checkBox">
+                <input type="checkbox" name="contract Acception" id="contract">
+                <span id="checkField"></span>
+                <label for="contract">I consent to being contacted by the team <span class="red">*</span></label>
+                <div class="error">Error Here</div>
+            </div>
+        </div>
+
+        <div class="fields">
+            <div class="inputField">
+                <button type="submit" id="submitBtn">Submit</button>
+            </div>
+        </div>
     </form>
 
     <script type="text/javascript" src="script.js"></script>
