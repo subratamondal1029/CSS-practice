@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: mainFont;
+  src: url(assets/fonts/Karla-Regular.ttf);
+}
+@font-face {
+  font-family: Headingfont;
+  src: url(assets/fonts/Karla-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: hsl(148, 38%, 91%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "mainFont", sans-serif, serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  width: 100%;
+  max-width: 640px;
+  border-radius: 10px;
+  padding: 40px;
+}
+
+#heading {
+  font-family: "Headingfont", sans-serif, serif;
+  align-self: flex-start;
+}
+
+.fields {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inputField {
+  width: 100%;
+}
+.inputField label {
+  color: gray;
+  display: block;
+  margin-block: 10px;
+}
+
+.red {
+  color: rgb(255, 0, 21);
+}
+
+.inputField input {
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(20, 20, 20, 0.4);
+  outline: none;
+}
+
+.inputField .error {
+  color: rgb(255, 0, 21);
+  margin-block: 8px;
+  cursor: not-allowed;
+  display: none;
+}
+
+.fields.dualField {
+  justify-content: space-between;
+  gap: 20px;
+}
+
