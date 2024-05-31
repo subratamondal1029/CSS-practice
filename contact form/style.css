@@ -33,7 +33,7 @@ form {
   flex-direction: column;
   gap: 10px;
   background-color: #fff;
-  width: 100%;
+  width: 93%;
   max-width: 740px;
   border-radius: 10px;
   padding: 40px;
@@ -42,6 +42,7 @@ form {
 #heading {
   font-family: "Headingfont", sans-serif, serif;
   align-self: flex-start;
+  margin-bottom: 15px;
 }
 
 .fields {
@@ -218,4 +219,23 @@ height: 54%;
 
 .inputField.Nproblem .error{
   display: none;
+}
+
+@media screen and (max-width:550px) {
+  body{
+    padding-block: 30px;
+  }
+
+  .fields.dualField{
+    flex-direction: column;
+  }
+  #query{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .inputField #message{
+    height: 240px;
+  }
 }
